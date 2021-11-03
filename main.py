@@ -4,14 +4,20 @@ print("홀짝 게임을 시작합니다.")
 # 구슬로 홀짝 게임 규칙
 # 상대방이 구슬의 개수를 정한다.
 
-# a = 5 # 10개 이하의 무작위 수로 입력
+# a = 5
+# 10개 이하의 무작위 수로 입력
+#1
+# import random
+# a = random.randrange(1, 10)
+#2
 import random
-a = random.randrange(1, 10)
+a = random.randint(1, 10)
 
 # print(a)
 # 내가 홀 또는 짝을 얘기한다.
 
-# my = "홀" # 고정되어 있는 값을 사용자가 입력
+# my = "홀"
+# 고정되어 있는 값을 사용자가 입력
 my = input("홀 혹은 짝을 입력하세요 : ")
 # print(my)
 # 만약 내가 얘기한 홀과 짝 중에 맞으면 맞다
