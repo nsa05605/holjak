@@ -10,11 +10,18 @@ marble = 10
 while marble > 0 :
     # 구슬의 개수를 알려줌
     print("당신의 구슬의 개수 : {}개".format(marble))
-    bet = int(input("구슬 몇 개를 베팅하시겠습니까? : "))
+
+    try: # 숫자를 제외한 것을 입력했을 때 오류 해결
+        bet = int(input("구슬 몇 개를 베팅하시겠습니까? : "))
+    except:
+        print("숫자만 입력하세요.")
+        continue
+    
     if bet > marble :
         print("갖고 있는 구슬의 개수보다 많습니다.")
         print("다시 입력하세요")
         continue
+
     my = input("홀 혹은 짝을 입력하세요 : ")
     if my == "홀" or my == "짝" :
         dab = ""
@@ -46,4 +53,3 @@ while marble > 0 :
     else :
         print("잘못 입력 다시 입력해라")
     
-
